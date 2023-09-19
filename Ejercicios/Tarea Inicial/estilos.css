@@ -1,0 +1,39 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#cabecera ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+#cabecera {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+body {
+    background-color: grey;
+}
+
+#contenido{
+    background-color: #EDEAE6;
+    width: 50%;
+    height: 190px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+
+.texto {
+    padding-left: 20px;
+}
+
+#pie {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
