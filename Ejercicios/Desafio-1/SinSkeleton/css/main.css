@@ -1,0 +1,68 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* -------------- HEADER -------------------------- */
+
+#cabecera {
+    background-color: #F9A21E;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#cabecera h1 {
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+    /* FLEX GROW -> specifies how much an element should grow relative to the other 
+    elements in a flex container. */
+
+    padding-top: 40px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    clip-path: circle(50% at center);
+    border: 5px solid #794E0F;
+
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+/*------------------------------------------------------*/
+
+#contenidos {
+    background-color: #F2DCBA;
+    position: absolute;
+}
+
+.sobreNosotros h2 {
+    background-image: url('../assets/header_home.jpg');
+}
+
+.sobreNosotros p {
+    background-color: white;
+    border-radius: 10px; /* Redondear bordes */
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+/* -------------------------- FOOTER----------------------------- */
+
+#pie {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #F9A21E;
+
+    padding: 10px;
+}
+
