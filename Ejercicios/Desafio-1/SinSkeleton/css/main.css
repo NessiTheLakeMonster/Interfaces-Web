@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@100&display=swap');
+
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Taviraj', serif;
 }
 
 /* -------------- HEADER -------------------------- */
@@ -13,13 +19,14 @@
 }
 
 #cabecera h1 {
-    text-align: center;
+    text-align: end;
     margin: 0;
     flex-grow: 1;
     /* FLEX GROW -> specifies how much an element should grow relative to the other 
     elements in a flex container. */
 
     padding-top: 40px;
+    margin-right: 50px;
 }
 
 .logo {
@@ -29,40 +36,135 @@
     clip-path: circle(50% at center);
     border: 5px solid #794E0F;
 
-    margin-left: auto;
-    margin-right: 50px;
+    margin-left: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9A21E;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    color: #794E0F;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    color: white;
+    background-color: #794E0F;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
 }
 
 /*------------------------------------------------------*/
 
 #contenidos {
+    position: relative;
     background-color: #F2DCBA;
-    position: absolute;
 }
 
-.sobreNosotros h2 {
-    background-image: url('../assets/header_home.jpg');
+.info {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto;
+    grid-gap: 20px; 
+
+    padding-bottom: 100px;
 }
 
-.sobreNosotros p {
+.sobreNosotros {
+    grid-column: 1;
+    grid-row: 1;
+}
+.producto {
+    grid-column: 2;
+    grid-row: 1 / 3;
+}
+.tiendas {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+
+
+.texto {
     background-color: white;
-    border-radius: 10px; /* Redondear bordes */
-    padding: 20px;
+    border-radius: 10px; 
+    padding: 30px;
     margin-left: 50px;
     margin-right: 50px;
     font-size: 16px;
 }
 
+/* -------------------------------- TIENDAS ----------------------- */
+
+.tiendas table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tiendas th, .tiendas td {
+    padding: 25px;
+    text-align: center;
+    border-bottom: 1px solid #794E0F;
+}
+
+.tiendas th {
+    background-color: #402703;
+    color: #fff;
+}
+
+
+
+/* -------------------------------- BOTONES ----------------------- */
+
+#botones {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 40px;
+
+    padding-bottom: 30px;
+}
+
+button {
+    background-color: #794E0F; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #a37734;
+}
+
 /* -------------------------- FOOTER----------------------------- */
 
 #pie {
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
     text-align: center;
     background-color: #F9A21E;
 
+    margin-top: 23px;
     padding: 10px;
 }
 
