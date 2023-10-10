@@ -7,6 +7,11 @@
 * 12/29/2014
 */
 
+.info {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
 
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -76,7 +81,7 @@
   .one-third.column               { width: 30.6666666667%; }
   .two-thirds.column              { width: 65.3333333333%; }
 
-  .one-half.column                { width: 48%; }
+  .one-half.column                { width: 48%; padding: 40px; border-radius: 10px; }
 
   /* Offsets */
   .offset-by-one.column,
@@ -158,9 +163,10 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: white; 
+  text-decoration: none;}
 a:hover {
-  color: #0FA0CE; }
+  color: wheat; }
 
 
 /* Buttons
@@ -182,9 +188,9 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: transparent;
+  background-color: #794E0F;
   border-radius: 4px;
-  border: 1px solid #bbb;
+  border: 1px solid #794E0F;
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,

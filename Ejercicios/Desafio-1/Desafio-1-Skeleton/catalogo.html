@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Basic Page Needs
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8" />
+<title>Catalogo</title>
+<meta name="description" content="" />
+<meta name="author" content="" />
+
+<!-- Mobile Specific Metas
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- FONT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link
+    href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+    rel="stylesheet"
+    type="text/css"
+/>
+
+<!-- CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/skeleton.css" />
+
+<!-- Favicon
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+
+<body>
+<header>
+    <div class="row" style="display: flex; justify-content: space-around">
+    <div class="one-third column">
+        <img class="logo" src="./images/logo_header.png" width="200px" />
+    </div>
+
+    <div class="one-third column" style="margin-top: 3%; margin-left: 30%">
+        <h1>EL TACÓN DE ORO</h1>
+
+        <nav style="display: flex; justify-content: space-evenly">
+        <button><a href="index.html">Home</a></button>
+        <button><a href="login.html">Iniciar sesion</a></button>
+        </nav>
+    </div>
+    </div>
+</header>
+
+<div class="row" style="display: flex; justify-content: space-between">
+    <div
+    class="one-half column"
+    style="
+        background-color: #f9a21e;
+        width: 100%;
+        margin-right: 250px;
+        border-radius: 0px;
+    "
+    >
+    <button class="btnNav"><a href="#zapatos" style="color: white;">ZAPATOS</a></button> <br />
+    <button class="btnNav"><a href="#bolsos">BOLSOS</a></button> <br />
+    <button class="btnNav"><a href="#complementos">COMPLEMENTOS</a></button>
+    </div>
+
+    <div class="one-half column" style="width: 100%">
+        <h1 id="zapatos">
+            Catalogo de zapatos <img src="./images/icon_tacon.png" width="30" />
+        </h1>
+
+        <div class="filtros">
+            <select>
+            <option value="none" selected disabled hidden>Tipo de Tacon</option>
+            <option value="Esp">Español</option>
+            <option value="Ing">English</option>
+            <option value="Cat">Catalá</option>
+            </select>
+
+            <select>
+            <option value="none" selected disabled hidden>Talla</option>
+            <option value="Esp">Español</option>
+            <option value="Ing">English</option>
+            <option value="Cat">Catalá</option>
+            </select>
+
+            Productos rebajados <input type="checkbox" name="" id="" />
+        </div>
+
+        <div class="container">
+            <div
+            class="row"
+            style="
+                display: flex;
+                justify-content: space-around;
+                gap: 100px;
+                margin-right: 200px;
+                margin-bottom: 50px;
+            "
+            >
+            <div class="info">
+                <img src="./images/zapatos/zapato1.jpg" height="250" />
+                <div class="especificaciones">
+                    <p>
+                        Tacon x <br />
+                        <b>23'99 €</b>
+                    </p>
+                    <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                </div>
+            </div>
+
+            <div class="info">
+                <img src="./images/zapatos/zapato2.jpg" height="250" />
+                <div class="especificaciones">
+                    <p>
+                        Tacon x <br />
+                        <b>23'99 €</b>
+                    </p>
+                    <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                </div>
+            </div>
+
+            <div class="info">
+                <img src="./images/zapatos/zapato3.jpg" height="250" />
+                <div class="especificaciones">
+                    <p>
+                        Tacon x<br />
+                        <b>23'99 €</b>
+                    </p>
+                    <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                </div>
+            </div>
+            </div>
+
+            <div
+            class="row"
+            style="
+                display: flex;
+                justify-content: space-around;
+                gap: 100px;
+                margin-right: 200px;
+                margin-bottom: 50px;
+            "
+            >
+            <div class="info">
+                <img src="./images/zapatos/zapato4.jpg" height="250" />
+                <div class="especificaciones">
+                    <p>
+                        Tacon x<br />
+                        <b>23'99 €</b>
+                    </p>
+                    <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                </div>
+            </div>
+
+            <div class="info">
+                <img src="./images/zapatos/zapato5.jpg" height="250" />
+                <div class="especificaciones">
+                    <p>
+                        Zapato x<br />
+                        <b>23'99 €</b>
+                    </p>
+                    <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                </div>
+            </div>
+
+            <div class="info">
+                <img src="./images/zapatos/zapato6.jpg" height="250" />
+                <div class="especificaciones">
+                    <p>
+                        Zapato x<br />
+                        <b>23'99 €</b>
+                    </p>
+                    <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="display: flex; justify-content: space-between">
+    <div
+    class="one-half column"
+    style="
+        background-color: #f9a21e;
+        width: 100%;
+        margin-right: 250px;
+        border-radius: 0px;
+    "
+    >
+
+    </div>
+
+    <div class="one-half column" style="width: 100%">
+        <h1 id="bolsos">
+            Catalogo de bolsos <img src="./images/icon_bolso.png" width="30" />
+        </h1>
+
+        <div class="filtros">
+            <select>
+            <option value="none" selected disabled hidden>Tipo de Tacon</option>
+            <option value="Esp">Español</option>
+            <option value="Ing">English</option>
+            <option value="Cat">Catalá</option>
+            </select>
+
+            <select>
+            <option value="none" selected disabled hidden>Talla</option>
+            <option value="Esp">Español</option>
+            <option value="Ing">English</option>
+            <option value="Cat">Catalá</option>
+            </select>
+
+            Productos rebajados <input type="checkbox" name="" id="" />
+        </div>
+
+        <div class="container">
+            <div
+            class="row"
+            style="
+                display: flex;
+                justify-content: space-around;
+                gap: 100px;
+                margin-right: 200px;
+                margin-bottom: 50px;
+            "
+            >
+                <div class="info">
+                    <img src="./images/bolsos/bolso1.jpg" height="250"> 
+                    <div class="especificaciones">
+                        <p>Bolso x <br>
+                        <b>23'99 €</b></p>
+                        <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <img src="./images/bolsos/bolso2.jpg" height="250"> 
+                    <div class="especificaciones">
+                        <p>Bolso x <br>
+                        <b>23'99 €</b></p>
+                        <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <img src="./images/bolsos/bolso3.jpg" height="250"> 
+                    <div class="especificaciones">
+                        <p>Bolso x <br>
+                        <b>23'99 €</b></p>
+                        <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div
+            class="row"
+            style="
+                display: flex;
+                justify-content: space-around;
+                gap: 100px;
+                margin-right: 200px;
+                margin-bottom: 50px;
+            "
+            >
+                <div class="info">
+                    <img src="./images/bolsos/bolso4.jpg" height="250"> 
+                    <div class="especificaciones">
+                        <p>Bolso x <br>
+                        <b>23'99 €</b></p>
+                        <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <img src="./images/bolsos/bolso5.jpg" height="250"> 
+                    <div class="especificaciones">
+                        <p>Mochila x <br>
+                        <b>23'99 €</b></p>
+                        <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <img src="./images/bolsos/bolso6.jpg" height="250"> 
+                    <div class="especificaciones">
+                        <p>Mochila x <br>
+                        <b>23'99 €</b></p>
+                        <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="display: flex; justify-content: space-between">
+    <div
+    class="one-half column"
+    style="
+        background-color: #f9a21e;
+        width: 100%;
+        margin-right: 250px;
+        border-radius: 0px;
+    "
+    >
+
+    </div>
+
+    <div class="one-half column" style="width: 100%">
+        <h1 id="complementos">
+            Catalogo de complementos <img src="./images/icon_complementos.png" width="30" />
+        </h1>
+
+        <div class="filtros">
+            <select>
+            <option value="none" selected disabled hidden>Tipo de Tacon</option>
+            <option value="Esp">Español</option>
+            <option value="Ing">English</option>
+            <option value="Cat">Catalá</option>
+            </select>
+
+            <select>
+            <option value="none" selected disabled hidden>Talla</option>
+            <option value="Esp">Español</option>
+            <option value="Ing">English</option>
+            <option value="Cat">Catalá</option>
+            </select>
+
+            Productos rebajados <input type="checkbox" name="" id="" />
+        </div>
+
+        <div class="container">
+            <div
+            class="row"
+            style="
+                display: flex;
+                justify-content: space-around;
+                gap: 100px;
+                margin-right: 200px;
+                margin-bottom: 50px;
+            "
+            >
+                <div class="info">
+                    <img src="./images/accesorios/ac1.jpg" height="250"> 
+                        <div class="especificaciones">
+                            <p>Cartera x <br>
+                            <b>23'99 €</b></p>
+                            <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                        </div>
+                </div>
+
+                    <div class="info">
+                        <img src="./images/accesorios/ac2.jpg" height="250"> 
+                        <div class="especificaciones">
+                            <p>Joyero x <br>
+                            <b>23'99 €</b></p>
+                            <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <img src="./images/accesorios/ac3.jpg" height="250"> 
+                        <div class="especificaciones">
+                            <p>Cinturón x <br>
+                            <b>23'99 €</b></p>
+                            <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                        </div>
+                    </div>
+                
+            </div>
+
+            <div
+            class="row"
+            style="
+                display: flex;
+                justify-content: space-around;
+                gap: 100px;
+                margin-right: 200px;
+                margin-bottom: 50px;
+            "
+            >
+                <div class="info">
+                    <img src="./images/accesorios/ac4.jpg" height="250"> 
+                    <div class="especificaciones">
+                        <p>Cartera x <br>
+                        <b>23'99 €</b></p>
+                        <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <img src="./images/accesorios/ac5.jpg" height="250"> 
+                    <div class="especificaciones">
+                        <p>Cinturón x <br>
+                        <b>23'99 €</b></p>
+                        <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <img src="./images/accesorios/ac6.jpg" height="250"> 
+                    <div class="especificaciones">
+                        <p>Joyero x <br>
+                        <b>23'99 €</b></p>
+                        <button><a href="" style="color: white; text-decoration: none;">Comprar</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer style="text-align: center">
+    &copy;Tacón de Oro <br />
+    calle <br />
+    Nuestras redes sociales <br />
+    <a href="">Instagram</a>
+    <a href="">Facebook</a>
+    <a href="">Youtube</a>
+</footer>
+</body>
+</html>
