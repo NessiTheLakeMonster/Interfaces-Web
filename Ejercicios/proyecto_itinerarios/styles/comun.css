@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Playfair+Display&display=swap');
+
+body {
+    background-color:  rgb(41, 40, 40);
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+p, h3, h4, h5, h6, a, span {
+    font-family: 'Arvo', serif;
+}
+
+label, li {
+    font-family: 'Arvo', serif;
+    color: azure;
+}
+
+.card {
+    position: relative;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#4ea5b9 100%);
+    z-index: 1;
+}
+
+.card img {
+    position: relative;
+    z-index: 0;
+}
+
+.card-body {
+    position: relative;
+    z-index: 2;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-body h2 {
+    margin-top: -17px;
+}
+
+.album {
+    background-color: rgb(41, 40, 40) !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.imgModal {
+    opacity: 0.7;
+    border-radius: 20px; 
+}
+

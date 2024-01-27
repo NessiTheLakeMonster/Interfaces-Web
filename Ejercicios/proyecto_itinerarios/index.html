@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./styles/comun.css">
+
+    <title>Home</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light mb-3">
+            <div class="container-fluid" style="background-color: #4EA5B9; margin-left:60px; margin-right: 60px; margin-top: 20px; border-radius: 100px;  box-shadow: #011b1d 0px 0px 10px 0px;">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/logo_recortado.png" alt="Logo de la página" width="150">
+                </a>
+
+                <h1 class="title" style="color: #011b1d; margin-right: 10vw;">HISPANIA ITINERA</h1>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./view/login.html">Iniciar sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./view/registro.html">Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./view/crearItinerario.html">Crea tu propio itinerario</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a class="img p-5" href="./view/perfil.html">
+                    <img src="./assets/user_1077114.png" alt="perfil" width="50">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="text-center m-5" style="color: azure;">Nuestros itinerarios</h1>
+
+    <p class="container p-4"  style="color: azure;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate finibus augue. Etiam scelerisque sapien semper, pellentesque leo sit amet, consequat ante. Sed iaculis lorem sodales, fringilla velit a, placerat massa. Aliquam at neque massa. Nunc iaculis mi tincidunt leo ullamcorper imperdiet. Praesent quis orci urna. Donec dui augue, vestibulum vitae lacinia eget, commodo eget justo. Mauris non condimentum dolor, et luctus massa. Quisque mollis nunc arcu, sed posuere est commodo eu. Quisque mauris est, laoreet at varius eget, mattis et metus. Maecenas convallis pretium metus et aliquam. Duis mattis magna et quam hendrerit placerat. Proin vitae ullamcorper arcu. Praesent vitae est sollicitudin est vestibulum venenatis. Vivamus interdum tellus eu felis ultricies, sit amet mollis ex suscipit.
+    </p>
+
+    <h1 class="text-center" style="color: azure;">Comunidades Autónomas</h1>
+
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+    
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm" style="background-color: #bac3cf;">
+                        <img class="bd-placeholder-img card-img-top" width="100%" height="225"  role="img" src="./assets/145.jpg" focusable="false"></img>
+                        <div class="card-body">
+                            <h2 class="card-title">CATALUÑA</h2>
+                            <h6 class="card-subtitle mb-2 text-body-secondary"> La tierra del modernismo y de la sardana. </h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#catModal">Saber más</button>
+                                </div>
+                                <small class="text-body-secondary">La sagrada familia</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col">
+                <div class="card shadow-sm"  style="background-color: #bac3cf;">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"  role="img" src="./assets/madrid_gran_via_01_primo_tratto_jpg_1200_630_cover_85.jpg" focusable="false"></img>
+                        <div class="card-body">
+                            <h2 class="card-title"> MADRID</h2>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">La tierra de la capital, del cocido y del chotis.</h6>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#madModal">Saber más</button>
+                                    </div>
+                                        <small class="text-body-secondary">Gran vía</small>
+                                </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm"  style="background-color: #bac3cf;">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"  role="img" src="./assets/3891172138_2e2e25a68d_c.jpg" focusable="false"></img>
+                        <div class="card-body">
+                            <h2 class="card-title">COM. VALENCIANA</h2>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">La tierra de las flores, de la luz y del amor. </h6>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#valModal">Saber más</button>
+                                    </div>
+                                        <small class="text-body-secondary">Ciudad de las artes y las Ciencias</small>
+                                </div>
+                        </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="card shadow-sm"  style="background-color: #bac3cf">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"  role="img" src="./assets/beautiful-cathedral.jpg" focusable="false"></img>
+                        <div class="card-body">
+                            <h2 class="card-title">CASTILLA-LA MANCHA</h2>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">La tierra de Don Quijote, del queso y del vino.</h6>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#clmModal">Saber más</button>
+                                    </div>
+                                        <small class="text-body-secondary">Catedral de Toledo</small>
+                                </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm"  style="background-color: #bac3cf">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"  role="img" src="./assets/alhambra.jpg" focusable="false"></img>
+                        <div class="card-body">
+                            <h2 class="card-title">ANDALUCÍA</h2>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">La tierra del sol, el flamenco y el arte.</h6>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#andModal">Saber más</button>
+                                    </div>
+                                        <small class="text-body-secondary">La Alhambra de Granada</small>
+                                </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm"  style="background-color: #bac3cf">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"  role="img" src="./assets/TEIDE3.jpg" focusable="false"></img>
+                        <div class="card-body">
+                            <h2 class="card-title">CANARIAS</h2>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">El archipiélago de la eterna primavera y el volcán</h6>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#canModal">Saber más</button>
+                                    </div>
+                                        <small class="text-body-secondary">El Teide de Tenerife</small>
+                                </div>
+                        </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div class="card shadow-sm"  style="background-color: #bac3cf">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"  role="img" src="./assets/bufones-de-pria.jpg" focusable="false"></img>
+                        <div class="card-body">
+                            <h2 class="card-title">ASTURIAS</h2>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Paraíso, donde el verde se funde con el azul.</h6>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#astModal">Saber más</button>
+                                    </div>
+                                        <small class="text-body-secondary">Bufones de Pría</small>
+                                </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm"  style="background-color: #bac3cf">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"  role="img" src="./assets/el-edificio-guggenheim-bilbao-1.jpg" focusable="false"></img>
+                        <div class="card-body">
+                            <h2 class="card-title">PAÍS VASCO</h2>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">La tierra del euskera, del txakoli y del bacalao.</h6>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#vasModal">Saber más</button>
+                                    </div>
+                                        <small class="text-body-secondary">Guggenheim de Bilbao</small>
+                                </div>
+                        </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm"  style="background-color: #bac3cf">
+                    <img class="bd-placeholder-img card-img-top" width="100%" height="225"  role="img" src="./assets/Centro_Botín_(37578627575).jpg" focusable="false"></img>
+                        <div class="card-body">
+                            <h2 class="card-title">CANTABRIA</h2>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">La tierra del mar y la montaña, del oso y del sobao.</h6>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#ctbModal">Saber más</button>
+                                    </div>
+                                        <small class="text-body-secondary">Centro Botín de Santander</small>
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para Cataluña -->
+<div class="modal fade" id="catModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#4ea5b9 100%); background-color: #bac3cf;">
+            <div class="modal-header">
+                <h3 class="modal-title">VISITA CATALUÑA</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img class="bd-placeholder-img mb-3 imgModal" src="./assets/145.jpg" alt="" width="100%" height="500"  role="img">
+                <p>Cataluña te ofrece una experiencia de vanguardia, diversidad y creatividad. Descubre su patrimonio 
+                    artístico, como la Sagrada Familia, el Parque Güell o el Museo Dalí. Disfruta de sus paisajes, como la Costa Brava, 
+                    el Montseny o el Delta del Ebro. Saborea su gastronomía, desde la paella al pan con tomate. Y siente su identidad, 
+                    su lengua y su cultura.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg btn-jqueryCAT">Ver itinerarios</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para Madrid -->
+<div class="modal fade" id="madModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#4ea5b9 100%); background-color: #bac3cf;">
+            <div class="modal-i"></div>
+            <div class="modal-header">
+                <h3 class="modal-title">VISITA LA COMUNIDAD DE MADRID</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img class="bd-placeholder-img mb-3 imgModal" src="./assets/madrid_gran_via_01_primo_tratto_jpg_1200_630_cover_85.jpg" alt="" width="100%" height="500"  role="img">
+                <p> La Comunidad de Madrid te ofrece una oferta de ocio, cultura y gastronomía. Descubre 
+                    su patrimonio urbano, como el Palacio Real, el Museo del Prado o el Retiro. Disfruta de sus espacios 
+                    naturales, como la Sierra de Guadarrama, el Hayedo de Montejo o el Parque Warner. Saborea su gastronomía, 
+                    desde el cocido madrileño al bocadillo de calamares. Y diviértete con su ambiente, su noche y su movida.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg btn-jqueryMAD">Ver itinerarios</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para la Comunidad Valenciana -->
+<div class="modal fade" id="valModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#4ea5b9 100%); background-color: #bac3cf;">
+            <div class="modal-header">
+                <h3 class="modal-title">VISITA LA COMUNIDAD VALENCIANA</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img class="bd-placeholder-img mb-3 imgModal" src="./assets/3891172138_2e2e25a68d_c.jpg" alt="" width="100%" height="500"  role="img">
+                <p>La Comunidad Valenciana te ofrece un destino de sol, playa y fiesta. Descubre su 
+                    patrimonio histórico, como la Lonja de Valencia, el Castillo de Peñíscola o el Palmeral de Elche. 
+                    Disfruta de sus playas, sus parques acuáticos y sus parques temáticos, como Terra Mítica, Aqualandia o 
+                    Bioparc. Saborea su gastronomía, desde la paella valenciana al turrón de Jijona. Y celebra sus fiestas, 
+                    como las Fallas, la Tomatina o las Hogueras de San Juan.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg btn-jqueryVAL">Ver itinerarios</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para Castilla-La Mancha -->
+<div class="modal fade" id="clmModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#4ea5b9 100%); background-color: #bac3cf;">
+            <div class="modal-header">
+                <h3 class="modal-title">VISITA CASTILLA-LA MANCHA</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img class="bd-placeholder-img mb-3 imgModal" src="./assets/beautiful-cathedral.jpg" alt="" width="100%" height="500"  role="img">
+                <p>Castilla-La Mancha te ofrece una aventura de literatura, cultura y tradición. Descubre 
+                    su patrimonio histórico, como las ciudades de Toledo, Cuenca o Almagro. Disfruta de sus paisajes, como 
+                    los molinos de viento, las lagunas de Ruidera o las Tablas de Daimiel. Saborea su gastronomía, desde el 
+                    queso manchego al pisto. Y participa en sus fiestas, sus ferias y sus costumbres.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg btn-jqueryCLM">Ver itinerarios</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para Andalucía -->
+<div class="modal fade" id="andModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#4ea5b9 100%); background-color: #bac3cf;">
+            <div class="modal-header">
+                <h3 class="modal-title">VISITA ANADALUCÍA</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img class="bd-placeholder-img mb-3 imgModal" src="./assets/alhambra.jpg" alt="" width="100%" height="500"  role="img">
+                <p>Andalucía te ofrece una experiencia inolvidable de historia, naturaleza y tradición. 
+                    Descubre sus impresionantes monumentos, como la Alhambra de Granada, la Mezquita de Córdoba o la Giralda de Sevilla. 
+                    Disfruta de sus playas, sus parques naturales y sus pueblos blancos. Saborea su rica gastronomía, desde el gazpacho 
+                    al pescaíto frito. Y déjate contagiar por su alegría, su música y su gente.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg btn-jqueryAND">Ver itinerarios</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para Canarias -->
+<div class="modal fade" id="canModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#4ea5b9 100%); background-color: #bac3cf;">
+            <div class="modal-header">
+                <h3 class="modal-title">VISITA CANARIAS</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img class="bd-placeholder-img mb-3 imgModal" src="./assets/TEIDE3.jpg" alt="" width="100%" height="500"  role="img">
+                <p>Canarias te ofrece un clima ideal, con unas islas de origen volcánico y una gran biodiversidad. 
+                    Descubre su patrimonio natural, como el Teide, el Timanfaya o la Caldera de Taburiente. Disfruta de sus playas, 
+                    sus dunas y sus acantilados, como las de Maspalomas, las de Jandía o los de Los Gigantes. Saborea su gastronomía, 
+                    desde el mojo al gofio. Y conoce su historia, su folclore y su carnaval.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg btn-jqueryCAN">Ver itinerarios</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para Asturias -->
+<div class="modal fade" id="astModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#4ea5b9 100%); background-color: #bac3cf;">
+            <div class="modal-header">
+                <h3 class="modal-title">VISITA ASTURIAS</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img class="bd-placeholder-img mb-3 imgModal" src="./assets/bufones-de-pria.jpg" alt="" width="100%" height="500"  role="img">
+                <p>Asturias te ofrece una belleza incomparable de montañas, valles, ríos y playas. Descubre su 
+                    patrimonio artístico, como el prerrománico, el románico o el barroco. Disfruta de su naturaleza, como los 
+                    Picos de Europa, los Lagos de Covadonga o la Senda del Oso. Saborea su gastronomía, desde la fabada al queso 
+                    de Cabrales. Y siente su identidad, su folclore y su sidra.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg btn-jqueryAST">Ver itinerarios</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para el País Vasco -->
+<div class="modal fade" id="vasModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#4ea5b9 100%); background-color: #bac3cf;">
+            <div class="modal-header">
+                <h3 class="modal-title">VISITA EL PAÍS VASCO</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img class="bd-placeholder-img mb-3 imgModal" src="./assets/el-edificio-guggenheim-bilbao-1.jpg" alt="" width="100%" height="500"  role="img">
+                <p>El País Vasco te ofrece una experiencia de cultura, naturaleza y gastronomía. Descubre 
+                    su patrimonio histórico, como el Museo Guggenheim, el Puente Colgante o el Santuario de Loyola. Disfruta 
+                    de sus paisajes, como la costa de Bizkaia, el bosque de Oma o el Parque Natural de Urkiola. Saborea su 
+                    gastronomía, desde el bacalao al pil-pil al pintxo de tortilla. Y aprende su idioma, su música y su deporte rural
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg btn-jqueryVAS">Ver itinerarios</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para Cantabria -->
+<div class="modal fade" id="ctbModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content" style="background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#4ea5b9 100%); background-color: #bac3cf;">
+            <div class="modal-header">
+                <h3 class="modal-title">VISITA CANTABRIA</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img class="bd-placeholder-img mb-3 imgModal" src="./assets/Centro_Botín_(37578627575).jpg" alt="" width="100%" height="500"  role="img">
+                <p>Cantabria te ofrece un paisaje variado, con una costa escarpada y una cordillera imponente. 
+                    Descubre su patrimonio prehistórico, como las cuevas de Altamira, el Soplao o el Monte Castillo. Disfruta de 
+                    sus espacios naturales, como el Parque de Cabárceno, el de Oyambre o el de los Collados del Asón. Saborea su 
+                    gastronomía, desde el cocido montañés al orujo de Liébana. Y admira su arte, su arquitectura y su artesanía.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg btn-jqueryCNB">Ver itinerarios</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="text-white text-center py-3 d-flex justify-content-around p-4">
+    <span>&copy; Inés Mª Barrera Llerena</span>
+
+    <div>
+        <img src="./assets/social_tw.png" alt="" width="50">
+        <img src="./assets/social_insta.png" alt="" width="50">
+        <img src="./assets/envelope_gmail.png" alt="" width="50">
+    </div>
+    
+</footer>
+
+</body>
+</html>
+
+<script src="./javascript/index.js"></script>

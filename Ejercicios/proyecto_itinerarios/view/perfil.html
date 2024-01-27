@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../styles/comun.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light mb-3">
+            <div class="container-fluid" style="background-color: #4EA5B9; margin-left:60px; margin-right: 60px; margin-top: 20px; border-radius: 100px;  box-shadow: #011b1d 0px 0px 10px 0px;">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logo_recortado.png" alt="Logo de la página" width="150">
+                </a>
+
+                <h1 class="title" style="color: #011b1d; margin-right: 10vw;">HISPANIA ITINERA</h1>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html">Iniciar sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./registro.html">Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../view/crearItinerario.html">Crea tu propio itinerario</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a class="img p-5" href="../view/perfil.html">
+                    <img src="../assets/user_1077114.png" alt="perfil" width="50">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="m-5 p-5" style="background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#4ea5b9 100%); border-radius: 10px;">
+        <h1 class="text-center" style="color: azure;">Tu Perfil</h1>
+    
+        <hr style="color: azure;">
+
+        <div id="msgExito" class="alert alert-info d-none"></div><br>
+        <div id="msgExitoFoto" class="alert alert-info d-none"></div>
+
+        <div class="d-flex justify-content-between gap-5">
+
+            <div class="col-6 text-center pt-3">
+                <h2 style="color: azure;">Itinerarios guardados</h2>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4 mt-4" id="itinerariosGuardados">
+                    
+                    <div class="card p-2">
+                        <div style="z-index: 2;">
+                            <h5><img src="../assets/bookmark_10207537.png" alt="guardados" width="50"> Itinerario 1</h5>
+                            <details>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</details>
+                        </div>
+                    </div>
+
+                    <div class="card p-2">
+                        <div style="z-index: 2;">
+                            <h5><img src="../assets/bookmark_10207537.png" alt="guardados" width="50"> Itinerario 1</h5>
+                            <details>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</details>
+                        </div>
+                    </div>
+
+                    <div class="card p-2">
+                        <div style="z-index: 2;">
+                            <h5><img src="../assets/bookmark_10207537.png" alt="guardados" width="50"> Itinerario 1</h5>
+                            <details>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</details>
+                        </div>
+                    </div>
+
+                    <div class="card p-2">
+                        <div style="z-index: 2;">
+                            <h5><img src="../assets/bookmark_10207537.png" alt="guardados" width="50"> Itinerario 1</h5>
+                            <details>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</details>
+                        </div>
+                    </div>
+
+                    <div class="card p-2">
+                        <div style="z-index: 2;">
+                            <h5><img src="../assets/bookmark_10207537.png" alt="guardados" width="50"> Itinerario 1</h5>
+                            <details>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</details>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    
+            <div class="form col-6 pe-5">
+                <div class="form-floating mb-3">
+                    <input class="form-control" type="text" id="nombrePerfil" placeholder="nombre">
+                    <label for="nombrePerfil" style="color: #011b1d;">Nombre</label>
+                </div>
+                
+                <div id="msgErrorNombre" class="alert alert-danger d-none"></div><br>
+        
+                <div class="form-floating mb-3">
+                    <input class="form-control" type="text" id="apellidosPerfil" placeholder="apellido">
+                    <label for="apellidosPerfil" style="color: #011b1d;">Apellido</label>
+                </div>
+                
+                <div id="msgErrorApellidos" class="alert alert-danger d-none"></div><br>
+        
+                <div class="form-floating mb-3">
+                    <input class="form-control" type="email" id="emailPerfil" placeholder="emailEjemplo@hispaniaitinera.com" disabled>
+                    <label for="emailPerfil" style="color: #011b1d;">Email</label>
+                </div>
+        
+                <input type="button" value="Actualizar datos" id="btnActualizarDatos" class="btn btn-success btn-lg mb-3"><br>
+        
+                <div class="form-floating mb-1 d-flex">
+                    <input class="form-control" type="password" id="passwdPerfil" placeholder="contraseña">
+                    <label for="passwdPerfil" style="color: #011b1d;">Nueva contraseña</label>
+                </div>
+                
+                <div id="msgErrorPasswd" class="alert alert-danger d-none"></div><br>
+        
+                <div class="d-flex justify-content-between">
+                    <input type="button" value="Cambiar contraseña" id="btnNewPasswd" class="btn btn-success btn-lg">
+                    <input type="button" value="Cerrar sesión" id="btnCerrarSesion" class="btn btn-danger btn-lg">
+                </div>
+    
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="text-white text-center py-3 d-flex justify-content-around p-4">
+        <span>&copy; Inés Mª Barrera Llerena</span>
+    
+        <div>
+            <img src="../assets/social_tw.png" alt="" width="50">
+            <img src="../assets/social_insta.png" alt="" width="50">
+            <img src="../assets/envelope_gmail.png" alt="" width="50">
+        </div>
+        
+    </footer>
+    
+</body>
+</html>
